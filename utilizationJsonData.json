@@ -1,0 +1,35 @@
+[
+    {
+        "id": 3,
+        "tenantId": 1,
+        "userId": 361,
+        "userName": "Zhitao Li",
+        "percent": "0.1875",
+        "createTime": "2019-12-26T02:24:14Z",
+        "createTimeStart": null,
+        "createTimeEnd": null,
+        "dayOfWeek": "THURSDAY"
+    },
+    {
+        "id": 2,
+        "tenantId": 1,
+        "userId": 361,
+        "userName": "Zhitao Li",
+        "percent": "0.1875",
+        "createTime": "2019-12-26T02:11:45Z",
+        "createTimeStart": null,
+        "createTimeEnd": null,
+        "dayOfWeek": "THURSDAY"
+    },
+    {
+        "id": 1,
+        "tenantId": 1,
+        "userId": 1,
+        "userName": null,
+        "percent": "0",
+        "createTime": "2019-12-24T16:14:42Z",
+        "createTimeStart": null,
+        "createTimeEnd": null,
+        "dayOfWeek": "TUESDAY"
+    }
+]

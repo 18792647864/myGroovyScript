@@ -46,7 +46,7 @@ for (json in boardlistjson) {
     ArrayNode argreementParamJson = mapper.createArrayNode();
 
 
-    for (int j = 0; j <5 ; j++) {
+    for (int j = 0; j < 5 ; j++) {
         ObjectNode argreementParamsObj = mapper.createObjectNode();
         argreementParamsObj.put("index",1);
         argreementParamsObj.put("amount",j*1000);

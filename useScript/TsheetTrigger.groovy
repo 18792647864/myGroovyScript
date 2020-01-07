@@ -100,7 +100,7 @@ Map<String, String> messageParam = Map.of("teamsUserId", user.get("teamsUserId")
 				"tenantId", user.get("tenantId").asLong(),
 				"frequency","once",
 				"ruleId", event.getId(),
-				"message", "Dear"+user.get("firstName").asText()
+				"message", "Dear "+user.get("firstName").asText()
                      +"you have already logged in on MSPBots but we just noticed that you also logged in on T-sheet at[ " + startTime + 
 				 ".] We have updated your clock in time as [ " + startTime + "] for you. In the future, you don’t need to log in from MSPbots anymore. Have a nice day. Thanks! ");
 		
