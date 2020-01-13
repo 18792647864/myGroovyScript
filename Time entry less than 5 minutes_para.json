@@ -1,0 +1,16 @@
+{
+    "fields":[
+        {
+            "text":"times",
+            "label":"Times",
+            "type":"text",
+            "defaultValue":"5"
+        },
+        {
+            "text":"frequency",
+            "label":"Frequency",
+            "type":"text",
+            "defaultValue":"once"
+        }
+    ]
+}

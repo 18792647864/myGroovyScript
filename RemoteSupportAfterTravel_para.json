@@ -1,0 +1,28 @@
+{
+    "fields":[
+        {
+            "text":"onsite",
+            "label":"Onsite",
+            "type":"text",
+            "defaultValue":"onsite"
+        },
+        {
+            "text":"enteredDate",
+            "label":"EnteredDate",
+            "type":"text",
+            "defaultValue":"enteredDate"
+        },
+        {
+            "text":"frequency",
+            "label":"Frequency",
+            "type":"text",
+            "defaultValue":"once"
+        },
+        {
+            "text":"send",
+            "label":"Send",
+            "type":"text",
+            "defaultValue":"true"
+        }
+    ]
+}

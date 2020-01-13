@@ -1,0 +1,28 @@
+{
+    "fields":[
+        {
+            "text":"escalation",
+            "label":"Escalation",
+            "type":"text",
+            "defaultValue":"false"
+        },
+        {
+            "text":"completed",
+            "label":"Completed",
+            "type":"text",
+            "defaultValue":"completed"
+        },
+        {
+            "text":"frequency",
+            "label":"Frequency",
+            "type":"text",
+            "defaultValue":"once"
+        },
+        {
+            "text":"send",
+            "label":"Send",
+            "type":"text",
+            "defaultValue":"true"
+        }
+    ]
+}

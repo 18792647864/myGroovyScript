@@ -1,0 +1,32 @@
+CREATE OR REPLACE FUNCTION tenant_tickets_update( maxnum int8)
+  RETURNS int8 AS
+$BODY$
+DECLARE
+  num int8 := 0;
+	numnext int8 := 0;
+BEGIN
+  WHILE num < maxnum  LOOP
+	
+	    numnext := num + 100;
+			update tenant_tickets set record_type = extend::jsonb ->> 'recordType',
+																sub_billing_method =  extend::jsonb ->> 'subBillingMethod',
+																location_name = extend::jsonb -> 'location' ->> 'name'
+			where id >= num and id < numnext ;
+
+			num := numnext;
+	
+  END LOOP; 
+	RETURN num;
+END;
+$BODY$
+  LANGUAGE 'plpgsql' VOLATILE;
+	
+	
+
+	
+	
+	SELECT  max(id) from tenant_tickets;
+
+	
+	SELECT tenant_tickets_update(190815);
+	

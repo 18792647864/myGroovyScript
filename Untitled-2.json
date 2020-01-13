@@ -1,0 +1,77 @@
+[
+    {
+        "id": 3482635,
+        "ticketId": 2336907,
+        "text": "ALERT: Node Boys & Girls Club - Reynolds is Down.\n\nhttp://SOLARWINDS01:80/Orion/View.aspx?NetObject=N:293\n\nhttp://SOLARWINDS01:80/Orion/Netperfmon/AckAlert.aspx?AlertDefID=1931",
+        "detailDescriptionFlag": true,
+        "internalAnalysisFlag": false,
+        "resolutionFlag": false,
+        "issueFlag": false,
+        "dateCreated": "2020-01-09T21:04:22Z",
+        "createdBy": "solarwinds@itsasap.com",
+        "internalFlag": false,
+        "externalFlag": true,
+        "_info": {
+            "lastUpdated": "2020-01-09T21:04:22Z",
+            "updatedBy": "solarwinds@itsasap.com"
+        }
+    },
+    {
+        "id": 3482750,
+        "ticketId": 2336907,
+        "text": "RESET: Node Boys & Girls Club - Reynolds is Up.\n\nNode was down for 24 minutes.\n\nhttp://SOLARWINDS01:80/Orion/View.aspx?NetObject=N:293",
+        "detailDescriptionFlag": true,
+        "internalAnalysisFlag": false,
+        "resolutionFlag": false,
+        "issueFlag": false,
+        "dateCreated": "2020-01-09T21:29:13Z",
+        "createdBy": "LyndaMarkovics",
+        "internalFlag": false,
+        "externalFlag": true,
+        "_info": {
+            "lastUpdated": "2020-01-09T21:49:16Z",
+            "updatedBy": "solarwinds@itsasap.com"
+        }
+    },
+    {
+        "id": 3482751,
+        "ticketId": 2336907,
+        "text": "ALERT: Boys & Girls Club - Reynolds rebooted at Thursday, January 9, 2020 1:13 PM\n\nhttp://SOLARWINDS01:80/Orion/View.aspx?NetObject=N:293\n\nhttp://SOLARWINDS01:80/Orion/Netperfmon/AckAlert.aspx?AlertDefID=1922",
+        "detailDescriptionFlag": true,
+        "internalAnalysisFlag": false,
+        "resolutionFlag": false,
+        "issueFlag": false,
+        "dateCreated": "2020-01-09T21:30:26Z",
+        "createdBy": "LyndaMarkovics",
+        "internalFlag": false,
+        "externalFlag": true,
+        "_info": {
+            "lastUpdated": "2020-01-09T21:49:16Z",
+            "updatedBy": "solarwinds@itsasap.com"
+        }
+    },
+    {
+        "id": 3482774,
+        "ticketId": 2336907,
+        "text": "",
+        "detailDescriptionFlag": true,
+        "internalAnalysisFlag": false,
+        "resolutionFlag": false,
+        "issueFlag": false,
+        "contact": {
+            "id": 64939,
+            "name": "Jesus Laracuente-Nunez",
+            "_info": {
+                "contact_href": "https://cw.itsasap.com/v4_6_release/apis/3.0/company/contacts/64939"
+            }
+        },
+        "dateCreated": "2020-01-09T21:57:22Z",
+        "createdBy": "Jesus Laracuente-Nunez jlaracuente-nunez@bgcsnv.org",
+        "internalFlag": false,
+        "externalFlag": true,
+        "_info": {
+            "lastUpdated": "2020-01-09T21:57:22Z",
+            "updatedBy": "Jesus Laracuente-Nunez jlaracuente-nunez@bgcsnv.org"
+        }
+    }
+]

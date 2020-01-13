@@ -1,0 +1,12 @@
+需要创建任务
+1.数据库表结构 ，从 extend 里提出来
+2.update 数据 
+3.同步取数据时，需要 insert or update data
+4.API 接口返回
+5.
+
+ http://localhost:8080/web/ticketai/tickets/page-db?current=1&size=10&descs=updated_time&board=1&allAssigned=false&tenantId=36
+
+recordType 
+subBillingMethod
+location_name

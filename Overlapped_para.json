@@ -1,0 +1,22 @@
+{
+    "fields":[
+        {
+            "text":"escalation",
+            "label":"Escalation",
+            "type":"text",
+            "defaultValue":"false"
+        },
+        {
+            "text":"times",
+            "label":"Times",
+            "type":"text",
+            "defaultValue":"3,6,9"
+        },
+        {
+            "text":"send",
+            "label":"Send",
+            "type":"text",
+            "defaultValue":"true"
+        }
+    ]
+}
