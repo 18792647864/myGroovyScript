@@ -1,0 +1,38 @@
+{
+    "fields":[    
+        {
+            "text":"send",
+            "label":"Send message to user",
+            "hint":"Send message to user",            
+            "type":"switch",
+            "defaultValue":false
+        },
+        {
+            "text":"frequency",
+            "label":"Frequency",
+            "type":"text",
+            "defaultValue":"day"
+        },
+        {
+            "text":"message",
+            "label":"Message",
+            "type":"textarea",
+            "defaultValue":"Dear {user}, you just created a time entry {timeEntry} that has {word}} in it."
+        },
+        {
+            "text":"times",
+            "label":"Escalation trigger times",
+            "type":"text",
+            "hint":"Escalation trigger times",
+            "defaultValue":"3,6,9"
+        },
+        {
+            "text":"sendEscalation",
+            "label":"Send escalation message to user",
+            "hint":"Send escalation message to user",            
+            "type":"switch",
+            "defaultValue":false
+        }
+        
+    ]
+}

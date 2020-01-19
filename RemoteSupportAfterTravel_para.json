@@ -19,10 +19,33 @@
             "defaultValue":"once"
         },
         {
-            "text":"send",
-            "label":"Send",
-            "type":"text",
-            "defaultValue":"true"
+            "text": "send",
+            "label": "Send message to user",
+            "type": "switch",
+            "defaultValue": false
+        },
+        {
+            "text": "message",
+            "label": "Message",
+            "hint": "Send escalation message to user",
+            "type": "textarea",
+            "defaultValue": "Dear{user}, you created a time entry {timeentry1} typed as {workTypeName}. It’s followed with the time entry {timeentry2} which is classified as Travel. Please check if the type should instead be onsite. Thanks!"
+        },
+        {
+            "text": "sendEscalation",
+            "label": "Send escalation message to user",
+            "type": "switch",
+            "defaultValue": false
+        },
+        {
+            "text": "times",
+            "label": "Escalation trigger times",
+            "type": "text",
+            "hint": "Escalation trigger times",
+            "defaultValue": "3,6,9"
         }
     ]
 }
+
+
+

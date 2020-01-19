@@ -11,7 +11,7 @@
             "label": "Message",
             "hint": "Send escalation message to user",
             "type": "textarea",
-            "defaultValue": "Dear {user}, you included your password in your time entry {timeentry}. For your own security, please avoid putting your account credentials in your entries.Thanks!"
+            "defaultValue": "Dear  {user}, your Time Entry {timeentry} on {ticket} is set to Work Type: Bus Hrs Service, but happened during After Hours. If you meant to bill at our Business Hours rate, please add an internal note that says: Bus Hrs Service that was done After Hours. Thanks!"
         },
         {
             "text": "sendEscalation",

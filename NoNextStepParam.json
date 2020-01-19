@@ -1,0 +1,11 @@
+{
+    "ruleId": 16,
+    "businessId": 83325,
+    "message": "Dear Zhitao,please add <span style = 'color:#FF0000;font-weight:bold'> Next Step </span> to your time entry <a href='https://cw.jexet.com/v4_6_release/ConnectWise.aspx?routeTo=TimeEntryFV&recid=83325'>83325</a>. This will save time for the next tech by listing the outstanding items needed to complete the ticket. If there aren't any, please add <span style='color:#FF0000;font-weight:bold'>No Next step</span> to avoid this message. Thanks!<br> --[ <span style='color:#999d9c;'>9 times</span> this week. Threshold <span style='color:#999d9c;'>3-6-9</span> ]<span style='color:#999d9c;font-size:10px;'>[Zhitao Li]&nbsp;[01/16 07:49 UTC]</span>",
+    "frequency": "once",
+    "businessType": "TimeEntry",
+    "send": true,
+    "tenantId": 41,
+    "tenantUserId": 804,
+    "teamsUserId": "3d6234e8-18a3-46d8-9514-4c22fa747b8f"
+}

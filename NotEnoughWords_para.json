@@ -1,5 +1,23 @@
 {
-    "fields": [
+    "fields":[
+        {
+            "text":"travel",
+            "label":"Travel",
+            "type":"text",
+            "defaultValue":"travel"
+        },
+        {
+            "text":"hourstime",
+            "label":"HoursTime",
+            "type":"text",
+            "defaultValue":"2"
+        },
+        {
+            "text":"notesnum",
+            "label":"NotesNum",
+            "type":"text",
+            "defaultValue":"100"
+        },
         {
             "text": "send",
             "label": "Send message to user",
@@ -11,7 +29,7 @@
             "label": "Message",
             "hint": "Send escalation message to user",
             "type": "textarea",
-            "defaultValue": "Dear {user}, you included your password in your time entry {timeentry}. For your own security, please avoid putting your account credentials in your entries.Thanks!"
+            "defaultValue": "Dear {user}, you just logged a time entry {timeentry1} that has more than 2 hours. The time log note is shorter than 100, so please add more details. Thanks!"
         },
         {
             "text": "sendEscalation",
@@ -34,3 +52,4 @@
         }
     ]
 }
+

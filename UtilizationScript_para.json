@@ -1,0 +1,10 @@
+{
+    "fields":[
+        {
+            "text":"statuses",
+            "label":"Statuses",
+            "type":"text",
+            "defaultValue":"Admin,Break"
+        }
+    ]
+}

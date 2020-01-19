@@ -1,0 +1,21 @@
+杨哲：
+no resolution for completed tickets
+time entry less than 5 minutes
+Possible travel time entry
+
+周军
+LateTimeEntry
+NoNextStep
+Late time entry x hours
+
+安飞飞
+IncludingPassword
+IncludingWords
+Escalation
+After hour time entry work type as Bus Hrs Service
+
+NoAgreementAttached
+TicketOnSite
+TicketInProgress
+RemoteSupportAfterTravel
+NotEnoughWords

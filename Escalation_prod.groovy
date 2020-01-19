@@ -27,8 +27,6 @@ if (Integer.parseInt(countUserMessages.get("num").asText()) == Integer.parseInt(
     JsonNode tenantUser = api.call("mapbots-core", "/tenant/user/" + user.get("tenantUserId").asLong() + "/info")
 
     JsonNode manager = api.call("mapbots-core", "/tenant/user/" + tenantUser.get("manager").asLong() + "/info")
-  
-  println manager
 
     Map<String, String> paramUser = Map.of("teamsUserId", user.get("teamsUserId"),
             "tenantUserId", user.get("tenantUserId").asLong(),
@@ -61,7 +59,7 @@ if (Integer.parseInt(countUserMessages.get("num").asText()) == Integer.parseInt(
             "tenantId", manager.get("tenantId").asLong(),
             "ruleId", payload.get("ruleId"),
             "escalation", true,
-	        "type","manager",
+	    "type","manager",
             "frequency", "week",
             "message", "Dear " + manager.get("firstname").asText()
             + ", " + user.get("userName").asText()

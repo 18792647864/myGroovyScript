@@ -1,5 +1,23 @@
 {
-    "fields": [
+    "fields":[
+        {
+            "text":"scheduledonsiteblank",
+            "label":"Scheduled on site",
+            "type":"text",
+            "defaultValue":"scheduled on site"
+        },
+        {
+            "text":"scheduledonsite",
+            "label":"Scheduled onsite",
+            "type":"text",
+            "defaultValue":"scheduled onsite"
+        },
+        {
+            "text":"frequency",
+            "label":"Frequency",
+            "type":"text",
+            "defaultValue":"once"
+        },
         {
             "text": "send",
             "label": "Send message to user",
@@ -11,7 +29,7 @@
             "label": "Message",
             "hint": "Send escalation message to user",
             "type": "textarea",
-            "defaultValue": "Dear {user}, you included your password in your time entry {timeentry}. For your own security, please avoid putting your account credentials in your entries.Thanks!"
+            "defaultValue": "Dear {user}, you have a ticket {ticket} in Scheduled On Site coming up. Do you need to leave the office now?"
         },
         {
             "text": "sendEscalation",
@@ -25,12 +43,8 @@
             "type": "text",
             "hint": "Escalation trigger times",
             "defaultValue": "3,6,9"
-        },
-        {
-            "text": "frequency",
-            "label": "Frequency",
-            "type": "text",
-            "defaultValue": "once"
         }
     ]
 }
+
+

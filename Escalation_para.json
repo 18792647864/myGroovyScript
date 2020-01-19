@@ -1,0 +1,52 @@
+{
+    "fields":[
+        {
+            "text": "send",
+            "label": "Send message to user",
+            "type": "switch",
+            "defaultValue": true
+        },
+        {
+            "text":"escalation",
+            "label":"Escalation",
+            "type":"text",
+            "defaultValue":"false"
+        },
+        {
+            "text":"messageescalation",
+            "label":"MessageEscalation",
+            "type":"text",
+            "defaultValue":"true"
+        },
+        {
+            "text":"frequency",
+            "label":"Frequency",
+            "type":"text",
+            "defaultValue":"week"
+        },
+        {
+            "text":"type",
+            "label":"Type",
+            "type":"text",
+            "defaultValue":"manager"
+        },
+        {
+            "text":"level1message",
+            "label":"Level 1 Message",
+            "type":"textarea",
+            "defaultValue":"Dear {user} you have triggered {triggerName} {time0} times this week. If you need help to fix this issue, please reach out to {managerName} . The system will notify {managerName} after {time1} times."
+        },
+        {
+            "text":"level2message",
+            "label":"Level 2 Message",
+            "type":"textarea",
+            "defaultValue":"Dear {managerName}, {user} has triggered {triggerName}  {time1} times this week. Please reach out to  {user}  to help fix the issue. The system will notify {managerUpName} after {time2} times."
+        },
+        {
+            "text":"level3message",
+            "label":"Level 3 Message",
+            "type":"textarea",
+            "defaultValue":"Dear {managerUpName}, {user} has triggered {triggerName}{time2} times this week. Please reach out to {user} to help fix the issue."
+        }
+    ]
+}

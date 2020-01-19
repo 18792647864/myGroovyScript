@@ -1,5 +1,17 @@
 {
-    "fields": [
+    "fields":[
+        {
+            "text":"company",
+            "label":"Company",
+            "type":"text",
+            "defaultValue":"company"
+        },
+        {
+            "text":"frequency",
+            "label":"Frequency",
+            "type":"text",
+            "defaultValue":"once"
+        },
         {
             "text": "send",
             "label": "Send message to user",
@@ -11,7 +23,7 @@
             "label": "Message",
             "hint": "Send escalation message to user",
             "type": "textarea",
-            "defaultValue": "Dear {user}, you included your password in your time entry {timeentry}. For your own security, please avoid putting your account credentials in your entries.Thanks!"
+            "defaultValue": "Dear {user}, please review your time entry {timeentry}since it <span style='color:#FF0000;font-weight:bold'>has no</span> agreement attached.Thanks!"
         },
         {
             "text": "sendEscalation",
@@ -25,12 +37,6 @@
             "type": "text",
             "hint": "Escalation trigger times",
             "defaultValue": "3,6,9"
-        },
-        {
-            "text": "frequency",
-            "label": "Frequency",
-            "type": "text",
-            "defaultValue": "once"
         }
     ]
 }

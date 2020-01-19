@@ -11,29 +11,25 @@ if (payload.get("timeStart")==null || payload.get("timeEnd")==null || payload.ge
 
 def beginDate = ignoreSeconds(ZonedDateTime.parse(payload.get("timeStart").asText()).toLocalDateTime())
 def endDate = ignoreSeconds(ZonedDateTime.parse(payload.get("timeEnd").asText()).toLocalDateTime())
-Duration times = Duration.between(beginDate,endDate)
+Duration times = Duration.between(beginDate, endDate)
 
-println beginDate
-println endDate
-println times.toMinutes()
 if (!payload.get("workType").get("name").asText().toLowerCase().contains("inc")) {
+    if (times.toMinutes() < 5) {
 
-	if(times.toMinutes() <  params.get("times").asLong()){
+        Map<String, String> ticketParams = Map.of(
+                "tenantId", user.get("tenantId").asLong(),
+                "cwId", payload.get("chargeToId").asLong()
+        )
+        JsonNode ticket = api.call("mspbots-core", "/tickets/detail", ticketParams)
 
-	Map<String, String> ticketParams = Map.of(
-		"tenantId", user.get("tenantId").asLong(),
-		"cwId", payload.get("chargeToId").asLong()
-	)
-	JsonNode ticket = api.call("mspbots-core","/tickets/detail",ticketParams)
-
-	if(ticket != null){
-	 if (ticket.get("extend").get("type") == null || !ticket.get("extend").get("type").get("name").asText().toLowerCase().contains("admin")) {
-		Map<String, String> param = Map.of(
-			"teamsUserId", user.get("teamsUserId"),
-			"tenantUserId",user.get("tenantUserId").asLong(),
-			"tenantId", user.get("tenantId").asLong(),
-			"frequency", params.get("frequency").asText(),
-			"businessId", payload.get("id").asLong(),
+        if (ticket != null) {
+            if (ticket.get("extend").get("type") == null || !ticket.get("extend").get("type").get("name").asText().toLowerCase().contains("admin")) {
+                Map<String, String> param = Map.of(
+                        "teamsUserId", user.get("teamsUserId"),
+                        "tenantUserId", user.get("tenantUserId").asLong(),
+                        "tenantId", user.get("tenantId").asLong(),
+                        "frequency", "once",
+                        "businessId", payload.get("id").asLong(),
                         "businessType", event.getScope(),
                         "send", "true",
                         "ruleId", event.getId(),

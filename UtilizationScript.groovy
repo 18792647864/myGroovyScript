@@ -3,10 +3,14 @@ import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.time.format.DateTimeFormatter;
 
+println "Utilization ------- Utilization"
+
 Map<String, String> param = Map.of("tenantId", payload.get("tenantId").asLong(),
                                    "tenantUserId",payload.get("tenantUserId").asLong(),
                                    "enteredDateStart",payload.get("enteredDateStart").asText(),
                                    "enteredDateEnd",payload.get("enteredDateEnd").asText())
+
+
 
 
 println "payload"
@@ -55,7 +59,7 @@ for(int i = 0;i < timeEntryJson.size();i++){
             println "3333333"
         }
         if(status != null){
-            if(status.equalsIgnoreCase("Admin") || status.equalsIgnoreCase("Break")){
+             if(params.get("statuses").toLowerCase().contains(status.toLowerCase())){
                 continue
                 println "44444"
             }

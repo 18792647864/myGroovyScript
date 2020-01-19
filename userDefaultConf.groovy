@@ -8,13 +8,11 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 Map<String, String> param = Map.of("tenantId", payload.get("id").asLong())
 
 
+JsonNode boardlistjson = api.call("mspbots-wise", "/boards/all", "get",param)
 
 
-JsonNode boardlistjson = api.call("mspbots-core", "/boards/all", "get",param)
-
-
-JsonNode prioritlistjson = api.call("mspbots-core", "/boards/priorities", "get",param)
-println "开始调用rule接口"
+JsonNode prioritlistjson = api.call("mspbots-wise", "/boards/priorities", "get",param)
+println "start call rule api!!!"
 
 println "tenantId:"+payload.get("id").asLong()
 JsonNode ruleCount = api.call("mspbots-core", "/ticket/rules/rulecount", "get",param)
@@ -33,7 +31,6 @@ ArrayNode rulesJsonArr = mapper.createArrayNode();
 for (json in boardlistjson) {
     ObjectNode ruleObj = mapper.createObjectNode();
 	
-
 
     //AGREEMENT_POINT_RULE	Agreement MRR Points
     ObjectNode argreementObj = mapper.createObjectNode();
@@ -205,7 +202,7 @@ for (json in boardlistjson) {
         //"closed","completed",“In progress”, "waiting", "scheduled",“cancelled”
         def statusName = statusJson.get("name").asText().toLowerCase()
         if(statusName.contains("closed") || statusName.contains("in progress")||statusName.contains("waiting")
-                ||statusName.contains("scheduled") || statusName.contains("cancelled")||statusName.contains("completed")){
+                ||statusName.contains("scheduled") || statusName.contains("cancelled")||statusName.contains("complete")){
             statusParamsObj.put("selected",false);
 			
 			
@@ -347,7 +344,89 @@ for (json in boardlistjson) {
 
     rulesJsonArr.add(updateObj)
 
+
+
+    
+    //TEAM_MATCHING_POINT_RULE	Team Matching Points
+
+    ObjectNode teamMarchingObj = mapper.createObjectNode();
+    teamMarchingObj.put("tenantId",payload.get("id").asLong())
+    teamMarchingObj.put("board",json.get("cwId").asText())
+    teamMarchingObj.put("enable",true)
+    teamMarchingObj.put("name","TEAM_MATCHING_POINT_RULE")
+    teamMarchingObj.put("displayName","Team Matching Points")
+
+    ArrayNode teamMarchingParamJson = mapper.createArrayNode();
+
+   
+    ObjectNode teamMarchingParamsObj = mapper.createObjectNode();
+    teamMarchingParamsObj.put("index",0);
+    teamMarchingParamsObj.put("condition","If ticket team is in user's teams, then add points");
+    teamMarchingParamsObj.put("points",10000);
+    teamMarchingParamsObj.put("selected",true);
+    teamMarchingParamJson.add(teamMarchingParamsObj)
+    
+
+    teamMarchingObj.put("params",teamMarchingParamJson)
+
+    rulesJsonArr.add(teamMarchingObj)
+
+
+
+    //SELECTED_ASSIGNED_POINT_RULE	Selected Assigned Points
+
+    ObjectNode selectAssignedObj = mapper.createObjectNode();
+    selectAssignedObj.put("tenantId",payload.get("id").asLong())
+    selectAssignedObj.put("board",json.get("cwId").asText())
+    selectAssignedObj.put("enable",true)
+    selectAssignedObj.put("name","SELECTED_ASSIGNED_POINT_RULE")
+    selectAssignedObj.put("displayName","Selected Assigned Points")
+
+    ArrayNode selectAssignedParamsJson = mapper.createArrayNode();
+
+   
+    ObjectNode selectAssignedParamsObj = mapper.createObjectNode();
+
+    selectAssignedParamsObj.put("statusIds",mapper.createArrayNode());
+    selectAssignedParamsObj.put("identifiers",mapper.createArrayNode());
+    selectAssignedParamsObj.put("points",0);
+    selectAssignedParamsObj.put("selected",true);
+    selectAssignedParamsJson.add(selectAssignedParamsObj)
+    
+
+    selectAssignedObj.put("params",selectAssignedParamsJson)
+
+    rulesJsonArr.add(selectAssignedObj)
+
+
+    //SCHEDULED_TIME_POINT_RULE	Scheduled Time Points
+
+    ObjectNode scheduledTimeObj = mapper.createObjectNode();
+    scheduledTimeObj.put("tenantId",payload.get("id").asLong())
+    scheduledTimeObj.put("board",json.get("cwId").asText())
+    scheduledTimeObj.put("enable",true)
+    scheduledTimeObj.put("name","SCHEDULED_TIME_POINT_RULE")
+    scheduledTimeObj.put("displayName","Scheduled Time Points")
+
+    ArrayNode scheduledTimeParamJson = mapper.createArrayNode();
+
+   
+    ObjectNode scheduledTimeParamsObj = mapper.createObjectNode();
+    scheduledTimeParamsObj.put("index",0);
+    scheduledTimeParamsObj.put("condition","A scheduled task past the 15 minutes of start time.");
+    scheduledTimeParamsObj.put("points",1000);
+    scheduledTimeParamsObj.put("selected",true);
+    scheduledTimeParamJson.add(scheduledTimeParamsObj)
+    
+
+    scheduledTimeObj.put("params",scheduledTimeParamJson)
+
+    rulesJsonArr.add(scheduledTimeObj) 
+
 }
 
-return api.call("mspbots-core", "ticket/rules", "post",rulesJsonArr)
+
+api.call("mspbots-core", "ticket/rules", "post",rulesJsonArr)
+
+return api.call("mspbots-wise", "manual/tickets", "get",Map.of("tenantId",payload.get("id").asLong()))
 

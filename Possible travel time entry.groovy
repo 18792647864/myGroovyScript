@@ -2,7 +2,10 @@ import com.fasterxml.jackson.databind.JsonNode
 import java.time.format.DateTimeFormatter
 import java.time.LocalDateTime
 
-def word = params.get("travel").toLowerCase()
+if (payload.get("notes")==null || payload.get("workType")==null) {
+  return false
+}
+def word = params.get("travel").asText().toLowerCase()
 def noteword = payload.get("notes").asText().toLowerCase()
 
 def workTypeWord = payload.get("workType").get("name").asText().toLowerCase()
@@ -24,9 +27,9 @@ if (noteword.contains(word) && !word.equals(workTypeWord)){
 		Map<String, String> param = Map.of("teamsUserId", user.get("teamsUserId").asText(),
 				"tenantUserId",user.get("tenantUserId").asLong(),
 				"tenantId", user.get("tenantId").asLong(),
-				"frequency", params.get("frequency"),
-                "send", params.get("send"),
-                "businessId",payload.get("id").asLong(),
+				"frequency", params.get("frequency").asText(),
+		                "send", params.get("send").asText(),
+		                "businessId",payload.get("id").asLong(),
 				"businessType",event.getScope(),
 				"ruleId", event.getId(),
 				"message", "Dear " + user.get("firstName").asText()

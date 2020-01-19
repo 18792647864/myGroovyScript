@@ -1,16 +1,16 @@
 {
     "fields":[
         {
-            "text":"escalation",
-            "label":"Escalation",
+            "text":"completed",
+            "label":"Completed",
             "type":"text",
-            "defaultValue":"false"
+            "defaultValue":"completed"
         },
         {
-            "text":"times",
-            "label":"Times",
+            "text":"frequency",
+            "label":"Frequency",
             "type":"text",
-            "defaultValue":"3,6,9"
+            "defaultValue":"frequency"
         },
         {
             "text":"send",
