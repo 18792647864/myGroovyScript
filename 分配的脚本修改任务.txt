@@ -2,20 +2,20 @@
 no resolution for completed tickets
 time entry less than 5 minutes
 Possible travel time entry
+RemoteSupportAfterTravel
 
 周军
-LateTimeEntry
+
+Overlapped
 NoNextStep
 Late time entry x hours
+Late time entry x minutes
 
 安飞飞
 IncludingPassword
 IncludingWords
-Escalation
 After hour time entry work type as Bus Hrs Service
-
 NoAgreementAttached
 TicketOnSite
 TicketInProgress
-RemoteSupportAfterTravel
 NotEnoughWords

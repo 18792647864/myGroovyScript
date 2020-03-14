@@ -1,0 +1,52 @@
+{
+    "fields":[
+        {
+            "text": "send",
+            "label": "Send message to user",
+            "type": "switch",
+            "defaultValue": false
+        },
+        {
+            "text": "message",
+            "label": "Message",
+            "hint": "message content",
+            "type": "textarea",
+            "defaultValue": "Dear {user}, please review your time entry {timeentry} since it <span style='color:#FF0000;font-weight:bold'>has no</span> agreement attached. Ticket {Ticket} - Client: {Client} {Summary}. Thanks!"
+        },
+        {
+            "text": "sendEscalation",
+            "label": "Send escalation message to user",
+            "type": "switch",
+            "defaultValue": false
+        },
+        {
+            "text": "times",
+            "label": "Escalation trigger times",
+            "type": "text",
+            "hint": "Escalation trigger times",
+            "defaultValue": "3,6,9"
+        },
+        {
+            "text": "ExcludeCompany",
+            "label": "Exclude Company",
+            "type": "text",
+            "hint": "Exclude Company",
+            "defaultValue": ""
+        },
+        {
+            "text": "ExcludeWorkType",
+            "label": "Exclude work type",
+            "type": "text",
+            "hint": "Exclude work type",
+            "defaultValue": ""
+        },
+        {
+            "text": "ExcludeEmployee",
+            "label": "Exclude employee",
+            "type": "text",
+            "hint": "Exclude employee",
+            "defaultValue": ""
+        }
+      	
+    ]
+}

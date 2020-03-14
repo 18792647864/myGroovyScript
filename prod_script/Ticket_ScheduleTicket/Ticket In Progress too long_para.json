@@ -1,0 +1,42 @@
+{
+    "fields":[
+        {
+            "text":"ticketstatus",
+            "label":"TicketStatus",
+            "type":"text",
+            "defaultValue":"in progress"
+        },
+        {
+            "text":"frequency",
+            "label":"Frequency",
+            "type":"text",
+            "defaultValue":"frequency"
+        },
+        {
+            "text": "send",
+            "label": "Send message to user",
+            "type": "switch",
+            "defaultValue": false
+        },
+        {
+            "text": "message",
+            "label": "Message",
+            "hint": "Send escalation message to user",
+            "type": "textarea",
+            "defaultValue": "Dear {user}, you have been processing the ticket {ticket}for 60 mins. Please check if it needs to be escalated."
+        },
+        {
+            "text": "sendEscalation",
+            "label": "Send escalation message to user",
+            "type": "switch",
+            "defaultValue": false
+        },
+        {
+            "text": "times",
+            "label": "Escalation trigger times",
+            "type": "text",
+            "hint": "Escalation trigger times",
+            "defaultValue": "3,6,9"
+        }
+    ]
+}

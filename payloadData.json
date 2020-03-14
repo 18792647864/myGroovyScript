@@ -1,11 +1,4 @@
 {
-    "tenantId": "140",
-    "eventName": "InitCwConfig",
-    "scope": "System",
-    "payload": {
-        "id": "140"
-    },
-    "userInfo": {
-        "tenantId": "1"
-    }
+    "id": "44"
+   
 }

@@ -1,0 +1,10 @@
+{
+    "fields":[    
+        {
+            "text":"frequency",
+            "label":"Frequency",
+            "type":"text",
+            "defaultValue":"day"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "tenantId": 140,
+    "eventName": "InitCwConfig",
+    "scope": "System",
+    "payload": {
+        "id": 140
+    }
+}

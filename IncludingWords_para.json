@@ -11,7 +11,7 @@
             "text":"frequency",
             "label":"Frequency",
             "type":"text",
-            "defaultValue":"day"
+            "defaultValue":"once"
         },
         {
             "text":"message",

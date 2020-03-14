@@ -1,0 +1,42 @@
+Dear Zhitao, you have triggered <span style='color:#FF7F00;font-weight:bold'>Late Time Entry</span>  26 times this week. If you need help to fix this issue, please reach out to Daniel Wang . The system will notify Daniel Wang after 27 times.
+<br> --<span style='color:#999d9c;font-size:10px;'><a href='https://appint.mspbots.ai/102322/report/MessageReport?tenantUserName=Zhitao Li&ruleId=9&businessType=Escalation&tenantId=165&createDateFrom=2020-03-02'></a></span>
+<br> --<span style='color:#999d9c;font-size:10px;'>[Zhitao Li]&nbsp;[03/03 14:39 UTC]</span>
+
+
+
+
+ JsonNode times = api.call("mspbots-core", "/teams/messages/countEscalation", countParam)
+          Integer escalationTime = Integer.parseInt(times.asText())
+          String escalationTimeStr = (escalationTime+1) + (escalationTime > 1 ? " times" : " time")
+
+
+
+
+ sendToTeamsForward::ruleId::21::forwardSystemUsers::c05e0bf2-f057-447a-9f7d-a37867a7787d
+ sendToTeams:::ruleId::21::teamsId 3d6234e8-18a3-46d8-9514-4c22fa747b8f
+ sendToTeamsForward::ruleId::21::tenantForwardIds::c05e0bf2-f057-447a-9f7d-a37867a7787d
+
+
+
+
+
+MSPBOTS:CONFIG:SYSTEM:messages.forwards
+MSPBOTS:CONFIG:TENANT:2:messages.forwards
+
+set MSPBOTS:CONFIG:TENANT:188:messages.forwards "3d6234e8-18a3-46d8-9514-4c22fa747b8f"
+
+
+
+"c05e0bf2-f057-447a-9f7d-a37867a7787d"
+
+docker exec -it baad48e82e61 /bin/bash
+
+
+docker exec -it 342d084d2e15 /bin/bash
+
+"c05e0bf2-f057-447a-9f7d-a37867a7787d,7b3f820d-c373-4767-872b-cc1c227123c6"
+
+
+
+
+

@@ -1,0 +1,22 @@
+{
+    "fields":[
+        {
+            "text":"travel",
+            "label":"Travel",
+            "type":"text",
+            "defaultValue":"travel"
+        },
+        {
+            "text":"hourstime",
+            "label":"HoursTime",
+            "type":"text",
+            "defaultValue":"2"
+        },
+        {
+            "text":"notesnum",
+            "label":"NotesNum",
+            "type":"text",
+            "defaultValue":"100"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "fields":[
+        {
+            "text":"ticket",
+            "label":"Ticket",
+            "type":"text",
+            "defaultValue":"ticket"
+        },
+        {
+            "text":"schedule",
+            "label":"Schedule",
+            "type":"text",
+            "defaultValue":"schedule"
+        },
+        {
+            "text":"objectId",
+            "label":"ObjectId",
+            "type":"text",
+            "defaultValue":"1"
+        },
+        {
+            "text":"level",
+            "label":"Level",
+            "type":"text",
+            "defaultValue":"owner"
+        }
+    ]
+}

@@ -1,18 +1,6 @@
 {
     "fields":[
         {
-            "text":"company",
-            "label":"Company",
-            "type":"text",
-            "defaultValue":"company"
-        },
-        {
-            "text":"frequency",
-            "label":"Frequency",
-            "type":"text",
-            "defaultValue":"once"
-        },
-        {
             "text": "send",
             "label": "Send message to user",
             "type": "switch",
@@ -21,9 +9,9 @@
         {
             "text": "message",
             "label": "Message",
-            "hint": "Send escalation message to user",
+            "hint": "message content",
             "type": "textarea",
-            "defaultValue": "Dear {user}, please review your time entry {timeentry}since it <span style='color:#FF0000;font-weight:bold'>has no</span> agreement attached.Thanks!"
+            "defaultValue": "Dear {user}, please review your time entry {timeentry} since it <span style='color:#FF0000;font-weight:bold'>has no</span> agreement attached. Ticket {Ticket} - Client: {Client} - Summary: {Summary}. Thanks!"
         },
         {
             "text": "sendEscalation",
@@ -37,6 +25,14 @@
             "type": "text",
             "hint": "Escalation trigger times",
             "defaultValue": "3,6,9"
+        },
+        {
+            "text": "company",
+            "label": "Company",
+            "type": "text",
+            "hint": "Company",
+            "defaultValue": ""
         }
+      	
     ]
 }

@@ -1,0 +1,714 @@
+[
+    {
+        "id": null,
+        "tenantId": 44,
+        "cwId": 1,
+        "name": "Reactive Support",
+        "inactiveFlag": false,
+        "createdTime": null,
+        "updateTime": "2019-06-14T01:46:25Z",
+        "syncTime": null,
+        "extend": {
+            "status": [
+                {
+                    "id": 1,
+                    "name": "In Progress"
+                },
+                {
+                    "id": 10,
+                    "name": "On Hold"
+                },
+                {
+                    "id": 15,
+                    "name": "Escalated to level 3"
+                },
+                {
+                    "id": 16,
+                    "name": "New Unused"
+                },
+                {
+                    "id": 17,
+                    "name": "Closed - Survey done"
+                },
+                {
+                    "id": 56,
+                    "name": "Re-Opened"
+                },
+                {
+                    "id": 62,
+                    "name": "Completed - email NPS to client"
+                },
+                {
+                    "id": 80,
+                    "name": "Cancelled - email client"
+                },
+                {
+                    "id": 339,
+                    "name": "New - Email client"
+                },
+                {
+                    "id": 340,
+                    "name": "New (Portal)"
+                },
+                {
+                    "id": 401,
+                    "name": "Scheduled On Site - Email client"
+                },
+                {
+                    "id": 433,
+                    "name": "Scheduled after hour - email client"
+                },
+                {
+                    "id": 434,
+                    "name": "Unresolved"
+                },
+                {
+                    "id": 439,
+                    "name": "Waiting Client Response - email client"
+                },
+                {
+                    "id": 443,
+                    "name": "Child Ticket"
+                },
+                {
+                    "id": 535,
+                    "name": "Auto Closed"
+                },
+                {
+                    "id": 536,
+                    "name": "Needs Follow-Up"
+                },
+                {
+                    "id": 566,
+                    "name": "Cancelled - no email to client"
+                },
+                {
+                    "id": 568,
+                    "name": "Completed - No email to client"
+                }
+            ]
+        }
+    },
+    {
+        "id": null,
+        "tenantId": 44,
+        "cwId": 6,
+        "name": "Proactive Service Alerts",
+        "inactiveFlag": false,
+        "createdTime": null,
+        "updateTime": "2019-04-27T01:30:58Z",
+        "syncTime": null,
+        "extend": {
+            "status": [
+                {
+                    "id": 106,
+                    "name": "New"
+                },
+                {
+                    "id": 107,
+                    "name": "Reviewed"
+                },
+                {
+                    "id": 109,
+                    "name": ">Closed"
+                },
+                {
+                    "id": 110,
+                    "name": "New (email)"
+                },
+                {
+                    "id": 111,
+                    "name": "New (RMM)"
+                },
+                {
+                    "id": 423,
+                    "name": "Responded"
+                },
+                {
+                    "id": 424,
+                    "name": "On Hold"
+                },
+                {
+                    "id": 425,
+                    "name": ">Cancelled"
+                },
+                {
+                    "id": 444,
+                    "name": "Child Ticket"
+                }
+            ]
+        }
+    },
+    {
+        "id": null,
+        "tenantId": 44,
+        "cwId": 20,
+        "name": "Projects",
+        "inactiveFlag": false,
+        "createdTime": null,
+        "updateTime": "2019-05-31T19:23:14Z",
+        "syncTime": null,
+        "extend": {
+            "status": [
+                {
+                    "id": 341,
+                    "name": ">Closed"
+                },
+                {
+                    "id": 342,
+                    "name": "Completed"
+                },
+                {
+                    "id": 343,
+                    "name": "In Progress"
+                },
+                {
+                    "id": 344,
+                    "name": "Informational"
+                },
+                {
+                    "id": 345,
+                    "name": "Issues"
+                },
+                {
+                    "id": 346,
+                    "name": "Milestone"
+                },
+                {
+                    "id": 347,
+                    "name": "On-Hold"
+                },
+                {
+                    "id": 348,
+                    "name": "Open"
+                },
+                {
+                    "id": 349,
+                    "name": "Scheduled"
+                },
+                {
+                    "id": 350,
+                    "name": "Waiting Client Update"
+                },
+                {
+                    "id": 421,
+                    "name": ">Closed with Post Project Survey"
+                },
+                {
+                    "id": 431,
+                    "name": "Client Responded"
+                },
+                {
+                    "id": 432,
+                    "name": "Client Response Past Due"
+                }
+            ]
+        }
+    },
+    {
+        "id": null,
+        "tenantId": 44,
+        "cwId": 22,
+        "name": "Change Management",
+        "inactiveFlag": true,
+        "createdTime": null,
+        "updateTime": "2019-05-13T18:18:50Z",
+        "syncTime": null,
+        "extend": {
+            "status": [
+                {
+                    "id": 445,
+                    "name": "Change Pending"
+                },
+                {
+                    "id": 446,
+                    "name": "Information Needed"
+                },
+                {
+                    "id": 447,
+                    "name": "Waiting On Resource"
+                },
+                {
+                    "id": 448,
+                    "name": "Completed"
+                },
+                {
+                    "id": 505,
+                    "name": "Waiting On Client"
+                },
+                {
+                    "id": 506,
+                    "name": "On Hold"
+                },
+                {
+                    "id": 531,
+                    "name": "Cancelled"
+                },
+                {
+                    "id": 532,
+                    "name": "Waiting on parts"
+                },
+                {
+                    "id": 533,
+                    "name": "Change Documentation"
+                },
+                {
+                    "id": 534,
+                    "name": "Scheduled"
+                }
+            ]
+        }
+    },
+    {
+        "id": null,
+        "tenantId": 44,
+        "cwId": 23,
+        "name": "Issue Management",
+        "inactiveFlag": true,
+        "createdTime": null,
+        "updateTime": "2019-05-02T20:40:12Z",
+        "syncTime": null,
+        "extend": {
+            "status": [
+                {
+                    "id": 510,
+                    "name": "On Hold"
+                },
+                {
+                    "id": 514,
+                    "name": "Re-Opened"
+                },
+                {
+                    "id": 515,
+                    "name": "Cancelled"
+                },
+                {
+                    "id": 517,
+                    "name": "Scheduled"
+                },
+                {
+                    "id": 522,
+                    "name": ">Closed"
+                },
+                {
+                    "id": 523,
+                    "name": "Completed"
+                },
+                {
+                    "id": 524,
+                    "name": "Child Ticket"
+                },
+                {
+                    "id": 525,
+                    "name": "Waiting Client Response"
+                }
+            ]
+        }
+    },
+    {
+        "id": null,
+        "tenantId": 44,
+        "cwId": 24,
+        "name": "Proactive Tasks",
+        "inactiveFlag": false,
+        "createdTime": null,
+        "updateTime": "2019-04-25T02:04:48Z",
+        "syncTime": null,
+        "extend": {
+            "status": [
+                {
+                    "id": 527,
+                    "name": "Scheduled"
+                },
+                {
+                    "id": 528,
+                    "name": "Waiting"
+                },
+                {
+                    "id": 529,
+                    "name": "Cancelled"
+                },
+                {
+                    "id": 530,
+                    "name": "Completed"
+                }
+            ]
+        }
+    },
+    {
+        "id": null,
+        "tenantId": 44,
+        "cwId": 27,
+        "name": "Purchasing",
+        "inactiveFlag": true,
+        "createdTime": null,
+        "updateTime": "2019-05-02T21:14:34Z",
+        "syncTime": null,
+        "extend": {
+            "status": [
+                {
+                    "id": 469,
+                    "name": "New"
+                },
+                {
+                    "id": 470,
+                    "name": "Complete"
+                },
+                {
+                    "id": 508,
+                    "name": "Waiting on Delivery"
+                },
+                {
+                    "id": 509,
+                    "name": "Waiting on Client"
+                }
+            ]
+        }
+    },
+    {
+        "id": null,
+        "tenantId": 44,
+        "cwId": 29,
+        "name": "Jexet Internal Tickets",
+        "inactiveFlag": false,
+        "createdTime": null,
+        "updateTime": "2019-04-24T12:31:38Z",
+        "syncTime": null,
+        "extend": {
+            "status": [
+                {
+                    "id": 472,
+                    "name": "open"
+                },
+                {
+                    "id": 473,
+                    "name": "Complete"
+                },
+                {
+                    "id": 474,
+                    "name": "Cancelled"
+                }
+            ]
+        }
+    },
+    {
+        "id": null,
+        "tenantId": 44,
+        "cwId": 30,
+        "name": "Human Resources",
+        "inactiveFlag": false,
+        "createdTime": null,
+        "updateTime": "2019-04-05T16:17:17Z",
+        "syncTime": null,
+        "extend": {
+            "status": [
+                {
+                    "id": 475,
+                    "name": "Applied"
+                },
+                {
+                    "id": 476,
+                    "name": "Initial Contact"
+                },
+                {
+                    "id": 477,
+                    "name": "Initial Interview"
+                },
+                {
+                    "id": 478,
+                    "name": "Assessments"
+                },
+                {
+                    "id": 479,
+                    "name": "Final Interview"
+                },
+                {
+                    "id": 480,
+                    "name": "Offer Sent"
+                },
+                {
+                    "id": 481,
+                    "name": "Internal HR(open)"
+                },
+                {
+                    "id": 482,
+                    "name": "Rejection"
+                },
+                {
+                    "id": 483,
+                    "name": "Accepted"
+                },
+                {
+                    "id": 484,
+                    "name": "Internal HR(Closed)"
+                },
+                {
+                    "id": 486,
+                    "name": "New Request"
+                },
+                {
+                    "id": 487,
+                    "name": "Update"
+                }
+            ]
+        }
+    },
+    {
+        "id": null,
+        "tenantId": 44,
+        "cwId": 32,
+        "name": "Field Support",
+        "inactiveFlag": true,
+        "createdTime": null,
+        "updateTime": "2019-05-02T21:11:27Z",
+        "syncTime": null,
+        "extend": {
+            "status": [
+                {
+                    "id": 537,
+                    "name": "New Request"
+                },
+                {
+                    "id": 538,
+                    "name": "Scheduled Reactive"
+                },
+                {
+                    "id": 539,
+                    "name": "Emergency "
+                },
+                {
+                    "id": 540,
+                    "name": "Preventive Maintenance "
+                },
+                {
+                    "id": 541,
+                    "name": "Onsite Recap "
+                },
+                {
+                    "id": 542,
+                    "name": "Documentation"
+                },
+                {
+                    "id": 543,
+                    "name": "Complete"
+                },
+                {
+                    "id": 544,
+                    "name": "Canceled"
+                }
+            ]
+        }
+    },
+    {
+        "id": null,
+        "tenantId": 44,
+        "cwId": 33,
+        "name": "Accounting ",
+        "inactiveFlag": false,
+        "createdTime": null,
+        "updateTime": "2019-05-01T18:50:23Z",
+        "syncTime": null,
+        "extend": {
+            "status": [
+                {
+                    "id": 545,
+                    "name": "New"
+                },
+                {
+                    "id": 546,
+                    "name": "In Progress - Send email"
+                },
+                {
+                    "id": 547,
+                    "name": "Waiting for Client - Send email"
+                },
+                {
+                    "id": 548,
+                    "name": "Need escalation"
+                },
+                {
+                    "id": 549,
+                    "name": "Completed"
+                },
+                {
+                    "id": 550,
+                    "name": "Cancelled"
+                }
+            ]
+        }
+    },
+    {
+        "id": null,
+        "tenantId": 44,
+        "cwId": 34,
+        "name": "Misc small projects",
+        "inactiveFlag": false,
+        "createdTime": null,
+        "updateTime": "2019-06-14T01:27:40Z",
+        "syncTime": null,
+        "extend": {
+            "status": [
+                {
+                    "id": 551,
+                    "name": "Scheduled onsite - Email to Notify client"
+                },
+                {
+                    "id": 552,
+                    "name": "Waiting On Parts - Email on client"
+                },
+                {
+                    "id": 553,
+                    "name": "Cancelled - No email to client"
+                },
+                {
+                    "id": 554,
+                    "name": "Completed - Email NPS to client"
+                },
+                {
+                    "id": 555,
+                    "name": "Information Needed"
+                },
+                {
+                    "id": 556,
+                    "name": "Waiting On Resource"
+                },
+                {
+                    "id": 557,
+                    "name": "Waiting on Client"
+                },
+                {
+                    "id": 558,
+                    "name": "On Hold"
+                },
+                {
+                    "id": 559,
+                    "name": "Re-Opened"
+                },
+                {
+                    "id": 560,
+                    "name": "New - Email client to notify ticket creation"
+                },
+                {
+                    "id": 567,
+                    "name": "In-progress - No email to client"
+                }
+            ]
+        }
+    },
+    {
+        "id": null,
+        "tenantId": 44,
+        "cwId": 35,
+        "name": "Sales and Marketing",
+        "inactiveFlag": false,
+        "createdTime": null,
+        "updateTime": "2019-05-01T23:08:59Z",
+        "syncTime": null,
+        "extend": {
+            "status": [
+                {
+                    "id": 561,
+                    "name": "New"
+                },
+                {
+                    "id": 562,
+                    "name": "In Progress"
+                },
+                {
+                    "id": 563,
+                    "name": "Waiting"
+                },
+                {
+                    "id": 564,
+                    "name": "Completed"
+                },
+                {
+                    "id": 565,
+                    "name": "Cancelled"
+                }
+            ]
+        }
+    },
+    {
+        "id": null,
+        "tenantId": 44,
+        "cwId": 26,
+        "name": "US Reactive Support",
+        "inactiveFlag": false,
+        "createdTime": null,
+        "updateTime": "2017-04-02T18:08:46Z",
+        "syncTime": null,
+        "extend": {
+            "status": [
+                {
+                    "id": 452,
+                    "name": "In Progress"
+                },
+                {
+                    "id": 453,
+                    "name": "Re-Schedule"
+                },
+                {
+                    "id": 454,
+                    "name": "On Hold"
+                },
+                {
+                    "id": 455,
+                    "name": "Waiting"
+                },
+                {
+                    "id": 456,
+                    "name": "New Unused"
+                },
+                {
+                    "id": 457,
+                    "name": ">Closed"
+                },
+                {
+                    "id": 458,
+                    "name": "Re-Opened"
+                },
+                {
+                    "id": 459,
+                    "name": "Completed"
+                },
+                {
+                    "id": 460,
+                    "name": ">Cancelled"
+                },
+                {
+                    "id": 461,
+                    "name": "New (Outlook Add-in)"
+                },
+                {
+                    "id": 462,
+                    "name": "New"
+                },
+                {
+                    "id": 463,
+                    "name": "New (Portal)"
+                },
+                {
+                    "id": 464,
+                    "name": "Scheduled"
+                },
+                {
+                    "id": 465,
+                    "name": "Unassigned"
+                },
+                {
+                    "id": 466,
+                    "name": "Unresolved"
+                },
+                {
+                    "id": 467,
+                    "name": "Waiting Client Response"
+                },
+                {
+                    "id": 468,
+                    "name": "Child Ticket"
+                }
+            ]
+        }
+    }
+]

@@ -1,0 +1,22 @@
+{
+    "fields":[
+        {
+            "text":"travel",
+            "label":"Travel",
+            "type":"text",
+            "defaultValue":"travel"
+        },
+        {
+            "text":"frequency",
+            "label":"Frequency",
+            "type":"text",
+            "defaultValue":"once"
+        },
+        {
+            "text":"send",
+            "label":"Send",
+            "type":"text",
+            "defaultValue":"true"
+        }
+    ]
+}

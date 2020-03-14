@@ -1,22 +1,29 @@
 {
     "fields":[
-        {
-            "text":"travel",
-            "label":"Travel",
-            "type":"text",
-            "defaultValue":"travel"
-        },
-        {
-            "text":"frequency",
-            "label":"Frequency",
-            "type":"text",
-            "defaultValue":"once"
-        },
-        {
+      	{
             "text":"send",
-            "label":"Send",
+            "label":"Send message to user",
+            "type":"switch",
+            "defaultValue":false
+        },
+      	{
+            "text":"message",
+            "label":"Message",
+            "type":"textarea",
+        "defaultValue":"Dear {USER}, your time entry {TIME_ENTRY} on {TICKET} includes the word \"Travel\", but the Work Type is not. Please check to make sure the \"Work Type\" is correct.Thanks!"
+        },
+      	{
+            "text":"sendEscalation",
+            "label":"Send escalation message to user",
+            "type":"switch",
+            "defaultValue":false
+        },
+        {
+            "text":"times",
+            "label":"Escalation trigger times",
             "type":"text",
-            "defaultValue":"true"
+            "hint":"Escalation trigger times",
+            "defaultValue":"3,6,9"
         }
     ]
 }

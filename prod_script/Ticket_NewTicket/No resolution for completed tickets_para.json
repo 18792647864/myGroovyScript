@@ -1,0 +1,22 @@
+{
+    "fields":[
+        {
+            "text":"completed",
+            "label":"Completed",
+            "type":"text",
+            "defaultValue":"completed"
+        },
+        {
+            "text":"frequency",
+            "label":"Frequency",
+            "type":"text",
+            "defaultValue":"frequency"
+        },
+        {
+            "text":"send",
+            "label":"Send",
+            "type":"text",
+            "defaultValue":"true"
+        }
+    ]
+}

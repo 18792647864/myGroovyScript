@@ -1,0 +1,28 @@
+{
+    "fields":[
+        {
+            "text":"scheduledonsiteblank",
+            "label":"Scheduled on site",
+            "type":"text",
+            "defaultValue":"scheduled on site"
+        },
+        {
+            "text":"scheduledonsite",
+            "label":"Scheduled onsite",
+            "type":"text",
+            "defaultValue":"scheduled onsite"
+        },
+        {
+            "text":"frequency",
+            "label":"Frequency",
+            "type":"text",
+            "defaultValue":"once"
+        },
+        {
+            "text":"send",
+            "label":"Send",
+            "type":"text",
+            "defaultValue":"true"
+        }
+    ]
+}

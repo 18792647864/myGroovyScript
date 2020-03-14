@@ -1,0 +1,31 @@
+{
+    "fields":[
+      	{
+            "text":"send",
+            "label":"Send message to user",
+            "hint":"Send message to user",            
+            "type":"switch",
+            "defaultValue":false
+        },
+        {
+            "text":"message",
+            "label":"Message",
+            "type":"textarea",
+              "defaultValue":"Dear {USER}, we just noticed that you have logged a time entry {CWTID} from {TIME_START} to {TIME_END} that overlaps with other time logs {CWTID2} from {TIME_START_2} to {TIME_END_2}. Please go to {CalendarLink} to fix it. If you need more information, please click {TrainingURL} to understand why we avoid overlapping entries.Thanks!"
+        },  
+        {
+            "text":"sendEscalation",
+            "label":"Send escalation message to user",
+            "hint":"Send escalation message to user",            
+            "type":"switch",
+            "defaultValue":false
+        },                      
+        {
+            "text":"times",
+            "label":"Escalation trigger times",
+            "type":"text",
+            "hint":"Escalation trigger times",
+            "defaultValue":"3,6,9"
+        }
+    ]
+}

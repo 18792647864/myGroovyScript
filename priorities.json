@@ -1,0 +1,47 @@
+[
+    {
+        "id": null,
+        "tenantId": 44,
+        "cwId": 6,
+        "name": "Priority 1 - Critical (All Users Down)",
+        "createdTime": null,
+        "updateTime": null,
+        "syncTime": null
+    },
+    {
+        "id": null,
+        "tenantId": 44,
+        "cwId": 7,
+        "name": "Priority 4 - Low",
+        "createdTime": null,
+        "updateTime": null,
+        "syncTime": null
+    },
+    {
+        "id": null,
+        "tenantId": 44,
+        "cwId": 8,
+        "name": "Priority 3 - Quick Response",
+        "createdTime": null,
+        "updateTime": null,
+        "syncTime": null
+    },
+    {
+        "id": null,
+        "tenantId": 44,
+        "cwId": 12,
+        "name": "Do Not Respond",
+        "createdTime": null,
+        "updateTime": null,
+        "syncTime": null
+    },
+    {
+        "id": null,
+        "tenantId": 44,
+        "cwId": 15,
+        "name": "Priority 2 - High (One User Down)",
+        "createdTime": null,
+        "updateTime": null,
+        "syncTime": null
+    }
+]

@@ -1,0 +1,2 @@
+String detailString = "<br> --<span style='color:#999d9c;font-size:10px;'><a href='https://appint.mspbots.ai/102322/report/MessageReport?tenantUserName=" + "" + "&ruleId=" + "" + "&businessType=Escalation&tenantId=" + "" + "&createDateFrom=" + "" +"'></a></span>";
+println "Escalation_params=====detailString========:" + detailString

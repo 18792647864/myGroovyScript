@@ -1,0 +1,77 @@
+{
+    "id":null,
+    "tenantId":160,
+    "cwUid":271,
+    "cwTid":83769,
+    "beginDate":"2020-03-02T12:00:00Z",
+    "endDate":"2020-03-02T12:30:00Z",
+    "enteredDate":"2020-03-03T03:56:17Z",
+    "updatedTime":"2020-03-03T03:56:17Z",
+    "actualHours":0.5,
+    "description":"test2",
+    "extend":{
+        "id":83769,
+        "company":{
+            "id":250,
+            "identifier":"companyid",
+            "name":"Jexet Technologies",
+            "_info":{
+                "company_href":"https://cw.jexet.com/v4_6_release/apis/3.0/company/companies/250",
+                "mobileGuid":"1df91371-6d7a-4778-ab81-f3e7761f5211"
+            }
+        },
+        "chargeToId":2,
+        "chargeToType":"ChargeCode",
+        "member":{
+            "id":271,
+            "identifier":"rong.qiao",
+            "name":"rong qiao",
+            "_info":{
+                "member_href":"https://cw.jexet.com/v4_6_release/apis/3.0/system/members/271",
+                "image_href":"https://cw.jexet.com/v4_6_release/apis/3.0/system/members/271/image?lm=2020-03-02T06:46:48Z"
+            }
+        },
+        "locationId":11,
+        "businessUnitId":1,
+        "workType":{
+            "id":7,
+            "name":"Vacation",
+            "_info":{
+                "workType_href":"https://cw.jexet.com/v4_6_release/apis/3.0/time/workTypes/7"
+            }
+        },
+        "workRole":{
+            "id":5,
+            "name":"Network Engineer",
+            "_info":{
+                "workRole_href":"https://cw.jexet.com/v4_6_release/apis/3.0/time/workRoles/5"
+            }
+        },
+        "timeStart":"2020-03-02T12:00:00Z",
+        "timeEnd":"2020-03-02T12:30:00Z",
+        "hoursDeduct":0,
+        "actualHours":0.5,
+        "billableOption":"NoCharge",
+        "notes":"test2",
+        "addToDetailDescriptionFlag":false,
+        "addToInternalAnalysisFlag":false,
+        "addToResolutionFlag":false,
+        "hoursBilled":0.5,
+        "enteredBy":"rong.qiao",
+        "dateEntered":"2020-03-03T03:56:17Z",
+        "mobileGuid":"f26da953-1d0f-4266-afda-d26405137fba",
+        "hourlyRate":119,
+        "timeSheet":{
+            "id":4533,
+            "name":"2020-03-02 to 2020-03-08",
+            "_info":{
+                "timeSheet_href":"https://cw.jexet.com/v4_6_release/apis/3.0/time/sheets/4533"
+            }
+        },
+        "status":"Open",
+        "_info":{
+            "lastUpdated":"2020-03-03T03:56:17Z",
+            "updatedBy":"rong.qiao"
+        }
+    }
+}

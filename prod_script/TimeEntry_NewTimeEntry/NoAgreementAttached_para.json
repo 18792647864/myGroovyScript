@@ -1,0 +1,22 @@
+{
+    "fields":[
+        {
+            "text":"company",
+            "label":"Company",
+            "type":"text",
+            "defaultValue":"company"
+        },
+        {
+            "text":"frequency",
+            "label":"Frequency",
+            "type":"text",
+            "defaultValue":"once"
+        },
+        {
+            "text":"send",
+            "label":"Send",
+            "type":"text",
+            "defaultValue":"true"
+        }
+    ]
+}

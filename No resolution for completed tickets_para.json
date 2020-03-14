@@ -1,22 +1,37 @@
 {
     "fields":[
+      	{
+            "text":"send",
+            "label":"Send message to user",
+            "hint":"Send message to user",            
+            "type":"switch",
+            "defaultValue":false
+        },
+      	{
+            "text":"message",
+            "label":"Message",
+            "type":"textarea",
+            "defaultValue":"Dear {firstName}, the ticket {ticketService} status is {completedByTechnician}, but a Resolution is missing. Please click the ticket link to fix the issue.Thanks!"
+        },
+      	{
+            "text":"sendEscalation",
+            "label":"Send escalation message to user",
+            "hint":"Send escalation message to user",            
+            "type":"switch",
+            "defaultValue":false
+        },
         {
-            "text":"completed",
-            "label":"Completed",
+            "text":"times",
+            "label":"Escalation trigger times",
             "type":"text",
-            "defaultValue":"completed"
+            "hint":"Escalation trigger times",
+            "defaultValue":"3,6,9"
         },
         {
             "text":"frequency",
             "label":"Frequency",
             "type":"text",
-            "defaultValue":"frequency"
-        },
-        {
-            "text":"send",
-            "label":"Send",
-            "type":"text",
-            "defaultValue":"true"
+            "defaultValue":"once"
         }
     ]
 }

@@ -1,0 +1,38 @@
+{
+  "fields":[
+      {
+          "text":"send",
+          "label":"Send message to user",
+          "hint":"Send message to user",            
+          "type":"switch",
+          "defaultValue":false
+      },
+     {
+          "text":"hours",
+          "label":"Hours",
+          "type":"text",
+          "hint":"hours after time entry",
+          "defaultValue":"2"
+      },
+      {
+          "text":"message",
+          "label":"Message",
+          "type":"textarea",
+            "defaultValue":"Dear {USER}, you just created the time entry {WORKTYPE} <a href='https://{CWSITE}/v4_6_release/ConnectWise.aspx?routeTo=TimeEntryFV&recid={CWTID}'>{CWTID}</a>  <span style = 'color:#FF0000;font-weight:bold'>{TIME}</span> after the time entry happened. To help you comply with company policy, please record it in real time, meaning no later than <span style = 'color:#FF0000;font-weight:bold'>2</span> hours after your end time. Thanks!"
+      },  
+      {
+          "text":"sendEscalation",
+          "label":"Send escalation message to user",
+          "hint":"Send escalation message to user",            
+          "type":"switch",
+          "defaultValue":false
+      },                      
+      {
+          "text":"times",
+          "label":"Escalation trigger times",
+          "type":"text",
+          "hint":"Escalation trigger times",
+          "defaultValue":"3,6,9"
+      }
+  ]
+}

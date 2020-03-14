@@ -1,36 +1,29 @@
 {
-    "fields": [
-        {
-            "text": "send",
-            "label": "Send message to user",
-            "type": "switch",
-            "defaultValue": false
+    "fields":[
+      	{
+            "text":"send",
+            "label":"Send message to user",
+            "type":"switch",
+            "defaultValue":false
+        },
+      	{
+            "text":"message",
+            "label":"Message",
+            "type":"textarea",
+        "defaultValue":"Dear {USER}, your time entry {TIME_ENTRY} on {TICKET} includes the word \"Travel\", but the Work Type is not. Please check to make sure the \"Work Type\" is correct.Thanks!"
+        },
+      	{
+            "text":"sendEscalation",
+            "label":"Send escalation message to user",
+            "type":"switch",
+            "defaultValue":false
         },
         {
-            "text": "message",
-            "label": "Message",
-            "hint": "Send escalation message to user",
-            "type": "textarea",
-            "defaultValue": "Dear  {user}, your Time Entry {timeentry} on {ticket} is set to Work Type: Bus Hrs Service, but happened during After Hours. If you meant to bill at our Business Hours rate, please add an internal note that says: Bus Hrs Service that was done After Hours. Thanks!"
-        },
-        {
-            "text": "sendEscalation",
-            "label": "Send escalation message to user",
-            "type": "switch",
-            "defaultValue": false
-        },
-        {
-            "text": "times",
-            "label": "Escalation trigger times",
-            "type": "text",
-            "hint": "Escalation trigger times",
-            "defaultValue": "3,6,9"
-        },
-        {
-            "text": "frequency",
-            "label": "Frequency",
-            "type": "text",
-            "defaultValue": "once"
+            "text":"times",
+            "label":"Escalation trigger times",
+            "type":"text",
+            "hint":"Escalation trigger times",
+            "defaultValue":"3,6,9"
         }
     ]
 }

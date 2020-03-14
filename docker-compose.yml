@@ -1,0 +1,68 @@
+version: '3.3'
+services:
+  postgres:
+    image: postgres:12.1
+    container_name: mspbots_postgresql
+    ports:
+      - 5432:5432
+    volumes:
+      - /home/server/pg_data/data:/var/lib/pgsql/data
+    environment:
+      - POSTGRES_DB=mspbots_dev
+      # psql 用户
+      - POSTGRES_USER=mspbots
+      # psql 密码
+      - POSTGRES_PASSWORD=123456
+    restart: always
+    privileged: true
+  rabbitmq:
+    image: rabbitmq:management
+    container_name: msp_rabbitmq
+    ports:
+      - 15672:15672
+      - 5672:5672
+    restart: always
+    volumes:
+      - /data/rabbitmq:/var/lib/rabbitmq
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200k"
+        max-file: "10"
+    environment:
+      - RABBITMQ_DEFAULT_USER=mspbots
+      - RABBITMQ_DEFAULT_PASS=123456
+    privileged: true
+  redis:  
+    hostname: redis
+    image: redis:5.0.4
+    container_name: msp_redis
+    restart: unless-stopped
+    command: redis-server /etc/redis.conf # 启动redis命令
+    environment:
+      - TZ=Asia/Shanghai
+    volumes:
+      - /etc/localtime:/etc/localtime:ro # 设置容器时区与宿主机保持一致
+      - ./redis/data:/data
+      - ./redis/redis.conf:/etc/redis.conf
+    ports:
+        - "6379:6379"
+    privileged: true
+  nacos:
+    image: nacos/nacos-server:latest
+    container_name: nacos
+    environment:
+    - MODE=standalone
+    volumes:
+    - /opt/nacos/logs:/home/nacos/logs
+    -  /opt/nacos/init.d/custom.properties:/home/nacos/init.d/custom.properties
+    ports:
+    - "8848:8848"
+
+
+
+
+
+
+
+https://www.jianshu.com/p/e053f016371a
